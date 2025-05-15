@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CO2 Emissions Analysis</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACYCzABix8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIiIiAAAAAAESIiIiIAAAAhIiIiIiAAACERERIiIAAAISEiIiIiAAAhIRIiIiIgACEhIRIiIiAAIiEhIREiIAAiISESIiIiAAIhIiEiIiIAAiIiEhEiIgAAIiISIhEiAAAAIiIiIiIAAAAAACIiIgAAAAAAAAAiAAAAAAAAAADAfwAAwA8AAMAHAADABwAAwAMAAMABAADAAQAAwAEAAMAAAADgAAAA4AAAAPAAAAD8AAAA/8AAAP/8AAD//wAA" rel="icon" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -35,9 +36,9 @@
     </div>
     
     <div class="container">
-        <h1 class="heading">CO2 Emissions Report</h1>
-        <p>This page provides an analysis of CO2 emissions data, presented through graphs and insights. </p>
-        <p> The dataset was created by The Global Carbon Project (GCP) and obtained via zenodo.org.</p><br>
+        <h1 class="heading">CO₂ Emissions Report</h1>
+        <p>This page provides an analysis of CO₂ emissions data, presented through graphs and insights. </p>
+        <p> The dataset was created by The Global Carbon Project (GCP) and obtained via zenodo.org.</p>
         <p>
         <a href="https://zenodo.org/records/7215364" target="_blank" rel="noopener">
             Dataset source
@@ -54,9 +55,9 @@
         </ul>
 
         
-        <h2 class="subheading">Global CO2 Emission Trends</h2>
+        <h2 class="subheading">Historical Global CO2 Emissions</h2>
         <p>
-            Over the years, global CO2 emissions have shown significant variations due to industrialization, energy consumption, and environmental policies. The following animated plot illustrates the global emission changes 
+            Over the years, global CO₂ emissions have shown significant variations due to industrialization, energy consumption, and environmental policies. The following animated plot illustrates the global emission changes 
             of every emission source type since past 100 years:
         </p>
         
@@ -67,13 +68,26 @@
             style="border:none;">
         </iframe>
 
-        <p>We can observe that coal emissions is the highest contributor to CO2 emissions followed by Oil and Gas. Also, emissions by coal had a drastic increase between 2001 and 2014, keeping constant later.</p>
-        <p>It's important to notice that no source has a negative trend, in the best scenario some have remained constant. This is not good if we aim to reduce emissions to meet with the Paris Agreement.</p>
+        <p>Coal remains the largest source of CO₂ emissions, followed by oil and gas. Emissions from coal climbed steeply between 2001 and 2014, then plateaued in the years that followed.</p>
+        <p>Notably, none of the emission sources shows a sustained decline; at best, some have stabilized. Such a flat trend is insufficient if we hope to achieve the reductions required under the Paris Agreement.</p><br>
+
+        <iframe 
+            src="images/emission-10y-plot.html" 
+            width="100%" 
+            height="600" 
+            style="border:none;">
+        </iframe>
+
+        <p>Between 2012 and 2022, global CO₂ emissions remained largely unchanged, with the notable exception of those from natural gas, which rose significantly. This increase reflects government initiatives to shift 
+            electricity generation away from coal toward cleaner alternatives like natural gas, with the aim of reducing net CO₂ emissions. This is also represented in the abrupt stagnation of coal emissions.</p>
 
 
-        <h2 class="subheading">CO2 Emissions by Sector</h2>
+        
+        
+
+        <h2 class="subheading">CO₂ Emissions by Sector</h2>
         <p>
-            Different sectors contribute differently to CO2 emissions. The graph below shows the breakdown of emissions by sector:
+            Different sectors contribute differently to CO₂ emissions. The graph below shows the breakdown of emissions by sector:
         </p>
         <div class="graph-container">
             <img src="images/banner.png" alt="CO2 Emissions by Sector" class="img-fluid">
